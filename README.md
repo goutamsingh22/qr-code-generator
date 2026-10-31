@@ -303,7 +303,3 @@ ruff check .
   `javascript` are rejected.
 
 ---
-
-## License
-
-Released under the [MIT License](LICENSE).
