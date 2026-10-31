@@ -1,10 +1,5 @@
 # qrgen - Python QR Code Generator
 
-[![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Tests](https://img.shields.io/badge/tests-54%20passing-brightgreen.svg)](tests)
-[![Powered by qrcode](https://img.shields.io/badge/powered%20by-qrcode-informational.svg)](https://github.com/lincolnloop/python-qrcode)
-
 A small command line tool and Python library for generating QR codes from plain
 text, web URLs, vCard contact details, e-mail links, SMS messages and Wi-Fi
 join codes. Images can be saved as PNG, SVG, JPG, BMP, GIF or WebP, or printed
