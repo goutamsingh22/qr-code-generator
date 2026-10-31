@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qrgen"
+version = "1.0.0"
+description = "Generate QR codes for text, URLs, contact cards, e-mail, SMS and Wi-Fi"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Goutam Singh", email = "25mcaa22@kristujayanti.com" }]
+keywords = ["qr", "qrcode", "generator", "vcard", "wifi", "cli"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Multimedia :: Graphics",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+dependencies = ["qrcode[pil]>=7.4"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "build>=1.0", "black>=24.0", "ruff>=0.4"]
+
+[project.scripts]
+qrgen = "qrgen.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/goutamsingh22/qr-code-generator"
+Repository = "https://github.com/goutamsingh22/qr-code-generator"
+Issues = "https://github.com/goutamsingh22/qr-code-generator/issues"
+
+[tool.setuptools]
+packages = ["qrgen"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B"]
+
+[tool.black]
+line-length = 100
+target-version = ["py39"]
