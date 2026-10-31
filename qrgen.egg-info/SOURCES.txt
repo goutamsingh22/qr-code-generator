@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+qrgen/__init__.py
+qrgen/__main__.py
+qrgen/cli.py
+qrgen/core.py
+qrgen/payloads.py
+qrgen.egg-info/PKG-INFO
+qrgen.egg-info/SOURCES.txt
+qrgen.egg-info/dependency_links.txt
+qrgen.egg-info/entry_points.txt
+qrgen.egg-info/requires.txt
+qrgen.egg-info/top_level.txt
+tests/test_cli.py
+tests/test_core.py
+tests/test_payloads.py

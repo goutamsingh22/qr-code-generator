@@ -1,0 +1,7 @@
+qrcode[pil]>=7.4
+
+[dev]
+pytest>=7.0
+build>=1.0
+black>=24.0
+ruff>=0.4
